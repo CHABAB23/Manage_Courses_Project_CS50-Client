@@ -1,0 +1,199 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox container for layout */
+  .app-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px;
+  }
+  
+  /* Left Column: Manage Course */
+  .Manage-Course {
+    width: 40%;
+    margin-right: 20px;
+  }
+  
+  /* Right Column: View All Courses */
+  .View-All-Courses {
+    width: 55%;
+  }
+  
+  /* Form and input styling */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input-field input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-field input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-submit {
+    margin-top: 10px;
+  }
+  
+  .btn-update, .btn-delete {
+    margin-right: 10px;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+  }
+  
+  .btn-delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Courses List: Cards layout */
+  .course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .course-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 45%;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .course-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-item li {
+    margin: 5px 0;
+  }
+  
+  .course-item li span {
+    font-weight: bold;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Links */
+  .link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .Manage-Course, .View-All-Courses {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .course-item {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+
+  .pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-buttons button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
